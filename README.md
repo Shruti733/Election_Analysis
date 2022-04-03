@@ -14,3 +14,37 @@ results:
 - Votes cast for each candidate
 - Percentage of votes cast for each canditate
 - Winning canditate and winning vote-count
+
+## Election-Audit Results
+
+### Total votes cast in congressional election
+
+We used the following logic to compute the total votes:
+
+```
+Initialize a total vote counter to 0
+
+Loop through rows of data
+    Increment total vote counter by 1
+Loop End
+```
+Using above logic, we determined that the total number of votes cast in the election were **369,711** as shown in the image below:
+
+![Total_votes](Images_analysis/Total_votes.png)
+
+### Breakdown of the number of votes and the percentage of total votes for each county in the precinct
+
+We used the following logic to compute the number of votes and percentage of votes for each county in precinct: 
+
+```
+Initialize a dictionary with `county name` as the key and `number of votes` as the value
+Loop through rows in data
+    Extract the `county name` from each row
+    Increment the `number of votes` saved in the dictionary with `county name` key by 1 if the current row holds data for `county name`
+Loop End
+``` 
+Using above logic, we determined number of votes and percentage for each county in the election as shown in the image below:
+
+![County_votes](Images_analysis/County_votes.png)
+
+
