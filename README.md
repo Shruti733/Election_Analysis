@@ -34,7 +34,7 @@ Using above logic, we determined that the total number of votes cast in the elec
 
 ### Breakdown of the number of votes and the percentage of total votes for each county in the precinct
 
-We used the following logic to compute the number of votes and percentage of votes for each county in precinct: 
+We used the following logic to compute the number of votes and percentage of votes for each county in the precinct: 
 
 ```
 Initialize a dictionary with `county name` as the key and `number of votes` as the value
@@ -49,13 +49,13 @@ Using above logic, we determined number of votes and percentage for each county 
 
 ![County_votes](Images_analysis/County_votes.png)
 
-### county with largest number of votes
+### County with largest number of votes
 
 To get the county with highest number of votes, we have used the following logic:
 
 ```
 Initialize `highest votes` to 0
-Initializ `winning county` to empty string
+Initialize `winning county` to empty string
 Loop through rows of data
     Extract `vote count` from each row
     if `vote count` >= `highest votes`
@@ -70,6 +70,8 @@ the below image:
 
 ### Breakdown of the number of votes and the percentage of the total votes for each candidate
 
+In order to calculate the number of votes canditate-wise, following logic was used:
+
 ```
 Initialize a dictionary with `candidate name` as the key and `number of votes` as the value
 
@@ -83,5 +85,27 @@ Using above logic, we determined the number of votes and percentage for each can
 
 ![Candidate_votes](Images_analysis/Candidate_votes.png)
 
-### Candidate won the election, their vote count and their percentage of the total votes
+### Determining Winning candidate, winning vote count and winning percentage
+
+The winner of the election was determined by using below logic: 
+```
+Initialize `winning candidate` to empty string
+Initialize `winning votes` to 0
+Initialize `winning percentage` to 0
+
+Loop through rows of data
+    Extract the `candidate name` from each row
+    Extract the `candidate votes` from each row
+    Calculate the `vote percentage` for `canditate name` using `total votes`
+    if `candidate votes` > `winning votes` and `vote percentage` > `winning percentage`
+        `winning votes` = `candidate votes`
+        `winning candidate` = `candidate name`
+        `winning percentage` = `vote percentage`
+Loop End
+```
+Using above logic, we determined that **Diana DeGette** won the election after receiving **272,892** votes
+which was almost **73.8%** of the total votes cast in the election. The summary of the election winner can be
+seen below:
+![Winner_details](Images_analysis/Winner_details.png)
+
 
