@@ -10,7 +10,7 @@ Python handles large data files and performs complex calculations quickly and he
 The main purpose of this project was to conduct a election audit on the tabulated results for a US congressional
 precinct using python to get a summary of the election results. Various parameters were calculated to analyse the election
 results:
-- Total votes,
+- Total votes
 - Votes cast for each candidate
 - Percentage of votes cast for each canditate
 - Winning canditate and winning vote-count
