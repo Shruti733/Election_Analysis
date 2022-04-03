@@ -2,18 +2,18 @@
 
 ## Overview of Project
 
-In this project, we were working on a election result data-set using Python to automate tasks and conduct data analysis.
+In this project, we were working on an election result data-set using Python to automate tasks and conduct data analysis.
 Python handles large data files and performs complex calculations quickly and helps to access, process, manipulate and store data.
 
 ### Purpose
 
-The main purpose of this project was to conduct a election audit on the tabulated results for a US congressional
-precinct using python to get a summary of the election results. Various parameters were calculated to analyse the election
+The main purpose of this project was to conduct an election audit on the tabulated results for a US congressional
+precinct using python to get a summary of the election results. Various parameters were calculated to analyze the election
 results:
 - Total votes
 - Votes cast for each candidate
-- Percentage of votes cast for each canditate
-- Winning canditate and winning vote-count
+- Percentage of votes cast for each candidate
+- Winning candidate and winning vote-count
 
 ## Election-Audit Results
 
@@ -41,7 +41,7 @@ results:
 
     Loop through rows of data
         Extract the `county name` from each row
-        Increment the `number of votes` saved in the dictionary with `county name` keyby 1 if the current
+        Increment the `number of votes` saved in the dictionary with `county name` key by 1 if the current
         row holds data for `county name`
     Loop End
     ``` 
@@ -70,7 +70,7 @@ results:
 
 - **Breakdown of the number of votes and the percentage of the total votes for each candidate:**
 
-    In order to calculate the number of votes canditate-wise, following logic was used:
+    In order to calculate the number of votes candidate-wise, following logic was used:
 
     ```
     Initialize a dictionary with `candidate name` as the key and `number of votes` as the value
@@ -96,7 +96,7 @@ results:
     Loop through rows of data
         Extract the `candidate name` from each row
         Extract the `candidate votes` from each row
-        Calculate the `vote percentage` for `canditate name` using `total votes`
+        Calculate the `vote percentage` for `candidate name` using `total votes`
         if `candidate votes` > `winning votes` and `vote percentage` > `winning percentage`
             `winning votes` = `candidate votes`
             `winning candidate` = `candidate name`
@@ -111,7 +111,7 @@ results:
 
 ## Election Audit Summary
 
-- The PyPoll_Challenge script can be used for analysing the election results of any state where the winner of the election is
+- The PyPoll_Challenge script can be used for analyzing the election results of any state where the winner of the election is
   decided based on the plurality rule i.e. highest number of votes obtained by a candidate decides the winner. But some states
   choose the winner based on the popularity of the candidate which is decided by the number of counties in which the candidate has
   obtained the highest number of votes. To perform this kind of analysis following logic can be added to the script:
@@ -119,7 +119,7 @@ results:
     2. Now determine the winner for each county using the per-county candidate summary
     3. Now determine which candidate has won in most counties based on above results
 
-- The PyPoll_Challenge script can be used for analysing the election results state-wise by taking state as the input:
+- The PyPoll_Challenge script can be used for analyzing the election results state-wise by taking state as the input:
   ```
   state = input("Enter the state for which you need to conduct the election analysis")
   Loop through rows of data:
