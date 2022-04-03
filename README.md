@@ -116,8 +116,19 @@ results:
   choose the winner based on the popularity of the candidate which is decided by the number of counties in which the candidate has
   obtained the highest number of votes. To perform this kind of analysis following logic can be added to the script:
     1. First of all, we need a per-county candidate summary
-    2. Now determine the winner for each county.
-    3. Now determine which candidate has won in most counties.
+    2. Now determine the winner for each county using the per-county candidate summary
+    3. Now determine which candidate has won in most counties based on above results
+
+- The PyPoll_Challenge script can be used for analysing the election results state-wise by taking state as the input:
+  ```
+  state = input("Enter the state for which you need to conduct the election analysis")
+  Loop through rows of data:
+    Extract the state from each row and save it in state_row
+    if state is not equal to state_row
+        continue
+    ... # rest of analysis
+  Loop End
+  ```
 
 
 
