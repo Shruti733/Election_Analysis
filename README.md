@@ -87,27 +87,27 @@ Using above logic, we determined the number of votes and percentage for each can
 
 - Determining Winning candidate, winning vote count and winning percentage:
 
-The winner of the election was determined by using below logic: 
-```
-Initialize `winning candidate` to empty string
-Initialize `winning votes` to 0
-Initialize `winning percentage` to 0
+    The winner of the election was determined by using below logic: 
+    ```
+    Initialize `winning candidate` to empty string
+    Initialize `winning votes` to 0
+    Initialize `winning percentage` to 0
 
-Loop through rows of data
-    Extract the `candidate name` from each row
-    Extract the `candidate votes` from each row
-    Calculate the `vote percentage` for `canditate name` using `total votes`
-    if `candidate votes` > `winning votes` and `vote percentage` > `winning percentage`
-        `winning votes` = `candidate votes`
-        `winning candidate` = `candidate name`
-        `winning percentage` = `vote percentage`
-Loop End
-```
-Using above logic, we determined that **Diana DeGette** won the election after receiving **272,892** votes
-which was almost **73.8%** of the total votes cast in the election. The summary of the election winner can be
-seen below:
+    Loop through rows of data
+        Extract the `candidate name` from each row
+        Extract the `candidate votes` from each row
+        Calculate the `vote percentage` for `canditate name` using `total votes`
+        if `candidate votes` > `winning votes` and `vote percentage` > `winning percentage`
+            `winning votes` = `candidate votes`
+            `winning candidate` = `candidate name`
+            `winning percentage` = `vote percentage`
+    Loop End
+    ```
+    Using above logic, we determined that **Diana DeGette** won the election after receiving **272,892** votes
+    which was almost **73.8%** of the total votes cast in the election. The summary of the election winner can be
+    seen below:
 
-![Winner_details](Images_analysis/Winner_details.png)
+    ![Winner_details](Images_analysis/Winner_details.png)
 
 
 
