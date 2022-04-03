@@ -109,6 +109,21 @@ results:
 
     ![Winner_details](Images_analysis/Winner_details.png)
 
+## Election Audit Summary
+
+- The PyPoll_Challenge script can be used for analysing the election results of any state where the winner of the election is
+  decided based on the plurality rule i.e. highest number of votes obtained by a candidate decides the winner. But some states
+  choose the winner based on the popularity of the candidate which is decided by the number of counties in which the candidate has
+  obtained the highest number of votes. To perform this kind of analysis following logic can be added to the script:
+    1. First of all, we need a per-county candidate summary
+    2. Now determine the winner for each county.
+    3. Now determine which candidate has won in most counties.
+
+
+
+
+
+
 
 
 
