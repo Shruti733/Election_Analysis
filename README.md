@@ -106,6 +106,7 @@ Loop End
 Using above logic, we determined that **Diana DeGette** won the election after receiving **272,892** votes
 which was almost **73.8%** of the total votes cast in the election. The summary of the election winner can be
 seen below:
+
 ![Winner_details](Images_analysis/Winner_details.png)
 
 
