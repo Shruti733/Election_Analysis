@@ -17,7 +17,7 @@ results:
 
 ## Election-Audit Results
 
-- Total votes cast in congressional election:
+- **Total votes cast in congressional election:**
 
     We used the following logic to compute the total votes:
 
@@ -32,7 +32,7 @@ results:
 
     ![Total_votes](Images_analysis/Total_votes.png)
 
-- Breakdown of the number of votes and the percentage of total votes for each county in the precinct:
+- **Breakdown of the number of votes and the percentage of total votes for each county in the precinct:**
 
     We used the following logic to compute the number of votes and percentage of votes for each county in the precinct: 
 
@@ -49,7 +49,7 @@ results:
 
     ![County_votes](Images_analysis/County_votes.png)
 
-- County with largest number of votes:
+- **County with largest number of votes:**
 
     To get the county with highest number of votes, we have used the following logic:
 
@@ -68,7 +68,7 @@ results:
 
     ![Largest_county_votes](Images_analysis/Largest_county_votes.png)
 
-- Breakdown of the number of votes and the percentage of the total votes for each candidate:
+- **Breakdown of the number of votes and the percentage of the total votes for each candidate:**
 
     In order to calculate the number of votes canditate-wise, following logic was used:
 
@@ -85,7 +85,7 @@ results:
 
     ![Candidate_votes](Images_analysis/Candidate_votes.png)
 
-- Determining Winning candidate, winning vote count and winning percentage:
+- **Determining Winning candidate, winning vote count and winning percentage:**
 
     The winner of the election was determined by using below logic: 
     ```
