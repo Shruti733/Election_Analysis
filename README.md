@@ -38,13 +38,50 @@ We used the following logic to compute the number of votes and percentage of vot
 
 ```
 Initialize a dictionary with `county name` as the key and `number of votes` as the value
-Loop through rows in data
+
+Loop through rows of data
     Extract the `county name` from each row
-    Increment the `number of votes` saved in the dictionary with `county name` key by 1 if the current row holds data for `county name`
+    Increment the `number of votes` saved in the dictionary with `county name` keyby 1 if the current
+    row holds data for `county name`
 Loop End
 ``` 
 Using above logic, we determined number of votes and percentage for each county in the election as shown in the image below:
 
 ![County_votes](Images_analysis/County_votes.png)
 
+### county with largest number of votes
+
+To get the county with highest number of votes, we have used the following logic:
+
+```
+Initialize `highest votes` to 0
+Initializ `winning county` to empty string
+Loop through rows of data
+    Extract `vote count` from each row
+    if `vote count` >= `highest votes`
+        `highest votes` = `vote count`
+        store the county name corresponding to `vote count` in `winning county`
+Loop End
+```
+Using above logic, we determined that the county with the highest number of votes was **Denver** as shown in
+the below image: 
+
+![Largest_county_votes](Images_analysis/Largest_county_votes.png)
+
+### Breakdown of the number of votes and the percentage of the total votes for each candidate
+
+```
+Initialize a dictionary with `candidate name` as the key and `number of votes` as the value
+
+Loop through rows of data
+    Extract the `candidate name` from each row
+    Increment the `number of votes` saved in the dictionary with `candidate name` key by 1 if the current row holds data for
+    `candidate name`
+Loop End
+``` 
+Using above logic, we determined the number of votes and percentage for each candidate in the election as shown in the image below:
+
+![Candidate_votes](Images_analysis/Candidate_votes.png)
+
+### Candidate won the election, their vote count and their percentage of the total votes
 
